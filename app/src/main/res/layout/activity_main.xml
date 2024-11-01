@@ -9,85 +9,14 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-        <Button
-            android:id="@+id/id_onButton"
-            android:layout_width="200dp"
-            android:layout_height="71dp"
-            android:layout_marginTop="50dp"
-            android:text="ON"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/id_status_image" />
-
-        <Button
-            android:id="@+id/id_offButton"
-            android:layout_width="200dp"
-            android:layout_height="71dp"
-            android:layout_marginTop="24dp"
-            android:text="OFF"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="@+id/id_onButton"
-            app:layout_constraintStart_toStartOf="@+id/id_onButton"
-            app:layout_constraintTop_toBottomOf="@+id/id_onButton" />
-
-        <Button
-            android:id="@+id/id_discoverable"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="Discoverable Devices"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="@+id/id_onButton"
-            app:layout_constraintStart_toStartOf="@+id/id_onButton"
-            app:layout_constraintTop_toBottomOf="@+id/id_offButton" />
-
-        <Button
-            android:id="@+id/id_paired_devices"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="Paired Devices"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="@+id/id_onButton"
-            app:layout_constraintStart_toStartOf="@+id/id_onButton"
-            app:layout_constraintTop_toBottomOf="@+id/id_discoverable" />
-
-        <ImageView
-            android:id="@+id/id_status_image"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="60dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/bluetooth_disabled" />
-
         <TextView
-            android:id="@+id/id_paired_text"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:gravity="center"
-            android:text="Samsung M33"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="@+id/id_paired_devices"
-            app:layout_constraintStart_toStartOf="@+id/id_paired_devices"
-            app:layout_constraintTop_toBottomOf="@+id/id_paired_devices" />
-
-        <TextView
-            android:id="@+id/id_status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="TextView"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/id_onButton"
-            app:layout_constraintEnd_toEndOf="@+id/id_status_image"
-            app:layout_constraintHorizontal_bias="0.49"
-            app:layout_constraintStart_toStartOf="@+id/id_status_image"
-            app:layout_constraintTop_toBottomOf="@+id/id_status_image" />
+            android:text="Hello World!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
