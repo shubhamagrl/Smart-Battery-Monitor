@@ -1,0 +1,25 @@
+const int voltagePin = A0; // Simulated analog pin for voltage reading
+const int tempPin = A1;    // Simulated analog pin for temperature reading
+const unsigned long interval = 1000; // Send data every 1 second
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  int voltageValue = analogRead(voltagePin);
+  int tempValue = analogRead(tempPin);
+
+  // Convert analog readings to a voltage and temperature
+  float voltage = (voltageValue / 1023.0) * 5.0; // assuming 5V as reference
+  float temperature = (tempValue / 1023.0) * 100.0; // assuming scale to 100°C
+
+  // Send data in JSON format for parsing on the Android app
+  Serial.print("{\"voltage\":");
+  Serial.print(voltage);
+  Serial.print(",\"temperature\":");
+  Serial.print(temperature);
+  Serial.println("}");
+
+  delay(interval); // Wait before sending the next reading
+}
