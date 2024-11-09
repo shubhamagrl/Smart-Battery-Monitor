@@ -35,6 +35,11 @@ class MainActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter()
 
+        binding.idToHome.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
         if (bluetoothAdapter == null){
             binding.idStatus.text = "Bluetooth is not available"
         }

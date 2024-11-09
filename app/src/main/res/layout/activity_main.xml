@@ -73,5 +73,16 @@
             app:layout_constraintStart_toStartOf="@+id/id_status_image"
             app:layout_constraintTop_toBottomOf="@+id/id_status_image" />
 
+        <Button
+            android:id="@+id/id_toHome"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:text="Home"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/id_paired_devices"
+            app:layout_constraintStart_toStartOf="@+id/id_paired_devices"
+            app:layout_constraintTop_toBottomOf="@+id/id_paired_text" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
